@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Weather App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="app/styles/app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" >
+    <link rel="icon" type="image/png" href="app/styles/resources/imgs/icon.png" sizes="32x32">
+
+    
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+
+</head>
+
+<body ng-app="app" ng-strict-di>
+    <script src="vendor/angular.min.js"></script>
+    <script src="vendor/angular-ui-router.min.js"></script>
+
+    <!-- My app -->
+
+    <script src="app/app.js"></script>
+    <!-- HTML code here -->
+    <script src="app/components/viewMain/view-main.js"></script>
+    <script src="app/components/commons/header/header.js"></script>
+    <script src="app/components/commons/footer/footer.js"></script>
+    <script src="app/components/about/about.js"></script>
+    <script src="app/components/viewMain/viewCity/view-city.js"></script>
+
+
+    <!-- Factories -->
+    <script src="app/factories/factory-cities.js"></script>
+    <script src="app/factories/factory-weather.js"></script>
+
+
+    <section class="main-page">
+
+        <!-- aquí se irán renderizando los componentes indicados en el router -->
+        <view-header></view-header>
+        <view-leftmenu></view-leftmenu>
+            <ui-view></ui-view>    
+        <view-footer></view-footer>    
+    </section>  
+
+</body>
+
+</html>

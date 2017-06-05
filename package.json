@@ -1,0 +1,24 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Weather App que utiliza la API de openweathermap.org",
+  "main": "src/app/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniberc/weatherApp.git"
+  },
+  "author": "Dani Bermudez\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[D\u001b[D\u001b[D\u001b[Del Bermudez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniberc/weatherApp/issues"
+  },
+  "homepage": "https://github.com/daniberc/weatherApp#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1"
+  }
+}

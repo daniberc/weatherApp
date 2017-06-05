@@ -1,0 +1,26 @@
+<div class="main-container">
+  <div class="main-title">
+    <h3>Seleccione la ciudad a visualizar</h3>
+  </div>
+
+  <div class="main-selector">
+  <label for="selComunity">Comunidad </label>
+  <select name="selComunity" ng-model="viewMain.gotComunity" ng-options="comunity for (comunity, city) in viewMain.cities" ng-change="viewMain.getComunity()">
+    <option value=''>-- Seleccionar --</option>
+  </select>
+  <label for="selCity">Ciudad </label>
+  <select id="selCity" ng-disabled="!viewMain.gotComunity" ng-model="viewMain.SelectedCity" ng-options="city for city in viewMain.gotComunity" ng-change="viewMain.selectCity()">
+    <option value=''>-- Seleccionar --</option>
+  </select>
+
+  </div>
+
+        <view-city  
+            ng-repeat="item in viewMain.weatherInfo" 
+            item-card="item" 
+            ng-hide="!viewMain.SelectedCity"
+            >
+        </view-city>
+
+
+</div>

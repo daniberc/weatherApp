@@ -1,0 +1,97 @@
+<article>
+    <div class="city-main">
+        
+        <div id="container"></div>
+        
+        <div class="city-day">
+
+            <div class="city-date">
+                <span class="img-weather">
+                    <img src="http://openweathermap.org/img/w/{{viewCity.weatherInfo.list[0].weather[0].icon}}.png" alt="forecast">
+                </span>
+                <span class="txt-date">Hoy 
+                      {{viewCity.weatherInfo.list[0].dt}} </span>
+                <span class="txt-temp">{{viewCity.weatherInfo.list[0].temp.day}} º</span>
+                <span class="txt-desc">{{viewCity.weatherInfo.list[0].weather[0].description}}</span>
+                <span class="txt-min">{{viewCity.weatherInfo.list[0].temp.min}} º</span>
+                <span class="txt-max">{{viewCity.weatherInfo.list[0].temp.max}} º</span>
+
+                <div class="date-detail">
+                    <span class="txt-pressure">Presión: {{viewCity.weatherInfo.list[0].pressure}} hpa</span>
+                    <span class="txt-humidity">Humedad: {{viewCity.weatherInfo.list[0].humidity}} %</span>
+                    <span class="txt-wind">Viento: {{viewCity.weatherInfo.list[0].speed}} m/s</span>
+                    <span class="txt-clouds">Nubes: {{viewCity.weatherInfo.list[0].clouds}} %</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="city-day">
+
+            <div class="city-date">
+
+                <span class="img-weather">
+                    <img src="http://openweathermap.org/img/w/{{viewCity.weatherInfo.list[1].weather[0].icon}}.png" alt="forecast">
+                </span>
+                <span class="txt-date">Mañana 
+                      {{viewCity.weatherInfo.list[1].dt}} </span>
+                <span class="txt-temp">{{viewCity.weatherInfo.list[1].temp.day}} º</span>
+                <span class="txt-desc">{{viewCity.weatherInfo.list[1].weather[0].description}}</span>
+                <span class="txt-min">{{viewCity.weatherInfo.list[1].temp.min}} º</span>
+                <span class="txt-max">{{viewCity.weatherInfo.list[1].temp.max}} º</span>
+
+                <div class="date-detail">
+                    <span class="txt-pressure">Presión: {{viewCity.weatherInfo.list[1].pressure}} hpa</span>
+                    <span class="txt-humidity">Humedad: {{viewCity.weatherInfo.list[1].humidity}} %</span>
+                    <span class="txt-wind">Viento: {{viewCity.weatherInfo.list[1].speed}} m/s</span>
+                    <span class="txt-clouds">Nubes: {{viewCity.weatherInfo.list[1].clouds}} %</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="city-day">
+
+            <div class="city-date">
+                <span class="img-weather">
+                    <img src="http://openweathermap.org/img/w/{{viewCity.weatherInfo.list[2].weather[0].icon}}.png" alt="forecast">
+                </span>
+                <span class="txt-date">{{viewCity.weatherInfo.list[2].dt}} </span>
+                <span class="txt-temp">{{viewCity.weatherInfo.list[2].temp.day}} º</span>
+                <span class="txt-desc">{{viewCity.weatherInfo.list[2].weather[0].description}}</span>
+                <span class="txt-min">{{viewCity.weatherInfo.list[2].temp.min}} º</span>
+                <span class="txt-max">{{viewCity.weatherInfo.list[2].temp.max}} º</span>
+
+                <div class="date-detail">
+                    <span class="txt-pressure">Presión: {{viewCity.weatherInfo.list[2].pressure}} hpa</span>
+                    <span class="txt-humidity">Humedad: {{viewCity.weatherInfo.list[2].humidity}} %</span>
+                    <span class="txt-wind">Viento: {{viewCity.weatherInfo.list[2].speed}} m/s</span>
+                    <span class="txt-clouds">Nubes: {{viewCity.weatherInfo.list[2].clouds}} %</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="city-day">
+
+            <div class="city-date">
+                <span class="img-weather">
+                    <img src="http://openweathermap.org/img/w/{{viewCity.weatherInfo.list[3].weather[0].icon}}.png" alt="forecast">
+                </span>
+                <span class="txt-date">{{viewCity.weatherInfo.list[3].dt}} </span>
+                <span class="txt-temp">{{viewCity.weatherInfo.list[3].temp.day}} º</span>
+                <span class="txt-desc">{{viewCity.weatherInfo.list[3].weather[0].description}}</span>
+                <span class="txt-min">{{viewCity.weatherInfo.list[3].temp.min}} º</span>
+                <span class="txt-max">{{viewCity.weatherInfo.list[3].temp.max}} º</span>
+
+                <div class="date-detail">
+                    <span class="txt-pressure">Presión: {{viewCity.weatherInfo.list[3].pressure}} hpa</span>
+                    <span class="txt-humidity">Humedad: {{viewCity.weatherInfo.list[3].humidity}} %</span>
+                    <span class="txt-wind">Viento: {{viewCity.weatherInfo.list[3].speed}} m/s</span>
+                    <span class="txt-clouds">Nubes: {{viewCity.weatherInfo.list[3].clouds}} %</span>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </div>
+
+</article>
